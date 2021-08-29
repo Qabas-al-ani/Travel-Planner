@@ -17,7 +17,6 @@ Location.hasMany(Trips, {
   onDelete: "CASCADE",
 });
 
-
 Trips.belongsTo(Location, {
   foreignKey: "trips_id",
 });
