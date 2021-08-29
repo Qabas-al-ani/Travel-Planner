@@ -21,4 +21,17 @@ Trips.belongsTo(Location, {
   foreignKey: "trips_id",
 });
 
+// Traveler.belongsToMany(Location, {
+//   through: Trips,
+//   foreignKey: "traveler_id",
+//   onDelete: "CASCADE",
+//   unique: false,
+// });
+// Location.belongsToMany(Traveler, {
+//   through: Trips,
+//   foreignKey: "location_id",
+//   onDelete: "CASCADE",
+//   unique: false,
+// });
+
 module.exports = { Traveler, Location, Trips };
